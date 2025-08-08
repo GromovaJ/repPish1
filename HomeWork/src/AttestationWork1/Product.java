@@ -7,10 +7,10 @@ class Product {
 
     //Конструктор класса Product с параметрами: name - название продукта, price - цена продукта
     public Product(String name, double price){
-        //Установка названия с помощью сеттера (включает валидацию)
-        setName(name);
-        //Установка цены с помощью сеттера (включает валидацию)
-        setPrice(price);
+        //Установка названия продукта
+        this.name = name;
+        //Установка цены
+        this.price = price;
     }
     //Геттер для получения названия продукта
     public String getName() {
@@ -18,10 +18,6 @@ class Product {
     }
     //Сеттер для установки названия продукта с валидацией
     public void setName(String name) {
-        //Проверка, что название не null и не пустая строка
-        if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("Название продукта не может быть пустой строкой");
-        }
         //Установка значения поля
         this.name = name;
     }
@@ -31,10 +27,6 @@ class Product {
     }
     //Сеттер для установки цены продукта с валидацией
     public void setPrice(double price) {
-        //Проверка, что цена не отрицательная
-        if (price < 0) {
-            throw new IllegalArgumentException("Стоимость продукта не может быть отрицательным числом");
-        }
         //Установка значения поля
         this.price = price;
     }

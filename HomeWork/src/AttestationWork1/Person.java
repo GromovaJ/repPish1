@@ -10,8 +10,8 @@ class Person {
 
     //Конструктор класса Person с параметрами name и money
     public Person(String name, double money) {
-        setName(name); //Установка имени с помощью сеттера (включает валидацию)
-        setMoney(money); //Установка суммы денег с помощью сеттера (включает валидацию)
+        this.name = name; //Установка имени
+        this.money = money; //Установка суммы денег
         this.products = new ArrayList<>(); //Инициализация списка продуктов пустым ArrayList
     }
     //Геттер для получения имени покупателя
@@ -20,15 +20,7 @@ class Person {
     }
     //Сеттер для установки имени покупателя с валидацией
     public void setName(String name) {
-        //Проверка, что имя не null и не пустая строка (после trim())
-        if (name == null || name.trim().isEmpty()){
-            throw new IllegalArgumentException("Имя покупателя не может пустой строкой");
-        }
-        //Проверка минимальной длины имени (3 символа)
-        if (name.length() < 3){
-            throw new IllegalArgumentException("Имя не может быть короче 3 символов");
-        }
-        this.name = name; //Установка значения поля, если валидация пройдена
+        this.name = name; //Установка значения поля
     }
     //Геттер для получения суммы денег покупателя
     public double getMoney() {
@@ -36,11 +28,7 @@ class Person {
     }
     //Сеттер для установки суммы денег с валидацией
     public void setMoney(double money) {
-        //Проверка, что сумма денег не отрицательная
-        if (money < 0){
-            throw new IllegalArgumentException("Деньги не могут быть отрицательными");
-        }
-        this.money = money; //Установка значения поля, если валидация пройдена
+        this.money = money; //Установка значения поля
     }
     //Геттер для получения списка продуктов покупателя
     public ArrayList<Product> getProducts() {
