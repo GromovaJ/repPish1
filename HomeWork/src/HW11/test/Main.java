@@ -28,7 +28,6 @@ public class Main {
             cars.forEach(System.out::println);
             System.out.println();
 
-
             // Тестовые данные
             String colorToFind = "Black";
             long mileageToFind = 0L;

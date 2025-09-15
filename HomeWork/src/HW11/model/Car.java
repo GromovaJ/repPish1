@@ -38,6 +38,7 @@ public class Car {
     public long getPrice() {
         return price;
     }
+
     //Переопределенный метод toString(), возвращающий строку представления объекта
     @Override
     public String toString() {

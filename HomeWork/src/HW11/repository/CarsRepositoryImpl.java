@@ -44,7 +44,6 @@ public class CarsRepositoryImpl implements CarsRepository {
                 }
 
             }).filter(Objects::nonNull).collect(Collectors.toList());
-
             return this.cars;
         }
     }
