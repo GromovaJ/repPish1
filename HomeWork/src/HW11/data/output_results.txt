@@ -1,0 +1,26 @@
+Всего автомобилей (10 шт.):
+Car{number='a123me', model='Mercedes', color='White', mileage=0, price=8300000}
+Car{number='b873of', model='Volga', color='Black', mileage=0, price=673000}
+Car{number='w487mn', model='Lexus', color='Grey', mileage=76000, price=900000}
+Car{number='p987hj', model='Volga', color='Red', mileage=610, price=704340}
+Car{number='c987ss', model='Toyota', color='White', mileage=254000, price=761000}
+Car{number='o983op', model='Toyota', color='Black', mileage=698000, price=740000}
+Car{number='p146op', model='BMW', color='White', mileage=271000, price=850000}
+Car{number='u893ii', model='Toyota', color='Purple', mileage=210900, price=440000}
+Car{number='l097df', model='Toyota', color='Black', mileage=108000, price=780000}
+Car{number='y876wd', model='Toyota', color='Black', mileage=160000, price=1000000}
+
+1. Номера автомобилей с цветом 'Black' или пробегом 0:
+a123me
+b873of
+o983op
+l097df
+y876wd
+
+2. Количество уникальных моделей в ценовом диапазоне 700000 - 800000: 2 шт
+
+3. Цвет автомобиля с минимальной стоимостью: Purple
+   Car{number='u893ii', model='Toyota', color='Purple', mileage=210900, price=440000}
+
+4. Средняя стоимость модели 'Toyota': 744200,00
+   Средняя стоимость модели 'Volvo': 0,00
