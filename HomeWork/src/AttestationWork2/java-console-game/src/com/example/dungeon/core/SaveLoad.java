@@ -9,8 +9,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class SaveLoad {
-    private static final Path SAVE = Paths.get("save.txt");
-    private static final Path SCORES = Paths.get("scores.csv");
+    private static final Path SAVE = Paths.get("java-console-game\\save.txt");
+    private static final Path SCORES = Paths.get("java-console-game\\scores.csv");
 
     // Сохранение игры
     public static void save(GameState s) {
