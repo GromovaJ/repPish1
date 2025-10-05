@@ -1,0 +1,6 @@
+player;Герой;19;5
+inventory;
+room;Лес
+room_data;Лес;description:Шелест листвы и птичий щебет.;items:Potion:Малое зелье|Potion:Приворотное зелье|Key:Ключ от сокровищницы;neighbors:east>Пещера|south>Площадь;
+room_data;Пещера;description:Темно и сыро.;neighbors:west>Лес;doors:east>Сокровищница>true>Ключ от сокровищницы;
+room_data;Площадь;description:Каменная площадь с фонтаном.;neighbors:north>Лес;
